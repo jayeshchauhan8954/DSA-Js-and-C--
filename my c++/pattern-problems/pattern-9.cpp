@@ -3,11 +3,11 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    int count = 1;
     int row = 1;
     while (row<=n)
     {
         int col = 1;
+        int count = row;
         while (col<=row)
         {
             cout << count<<" ";
@@ -19,3 +19,11 @@ int main(){
     }
     
 }
+
+// expected output
+// if n = 5
+// 1
+// 2 3
+// 3 4 5
+// 4 5 6 7
+// 5 6 7 8 9
